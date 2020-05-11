@@ -8,7 +8,9 @@ import '@polymer/paper-styles/shadow.js';
 import '@polymer/paper-styles/typography.js';
 import '@polymer/iron-resizable-behavior/iron-resizable-behavior.js';
 import './paper-date-picker-icons.js';
-import 'moment/min/moment.min.js';
+import 'moment/src/moment.js';
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 
 // Ignore movement within this distance (px)
 var WIGGLE_THRESHOLD = 4;
@@ -33,7 +35,7 @@ function dateDiff(a, b) {
 }
 
 Polymer({
-  _template: Polymer.html`
+  _template: html`
     <style>
       :host {
         display: block;

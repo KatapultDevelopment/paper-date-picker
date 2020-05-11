@@ -58,6 +58,8 @@ import '@polymer/paper-styles/typography.js';
 import './paper-calendar.js';
 import './paper-date-picker-dialog-style.js';
 import './paper-year-list.js';
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 const $_documentContainer = document.createElement('template');
 
 $_documentContainer.innerHTML = `<style is="custom-style" include="paper-date-picker-dialog-style">
@@ -67,7 +69,7 @@ $_documentContainer.innerHTML = `<style is="custom-style" include="paper-date-pi
 document.head.appendChild($_documentContainer.content);
 
 Polymer({
-  _template: Polymer.html`
+  _template: html`
     <style>
       :host {
         -webkit-touch-callout: none;
