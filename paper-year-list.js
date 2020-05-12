@@ -4,8 +4,10 @@ import {IronResizableBehavior} from '@polymer/iron-resizable-behavior/iron-resiz
 import '@polymer/paper-ripple/paper-ripple.js';
 import '@polymer/paper-styles/default-theme.js';
 import '@polymer/polymer/polymer-legacy.js';
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 Polymer({
-  _template: Polymer.html`
+  _template: html`
     <style>
       :host {
         display: block;
