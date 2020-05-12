@@ -1,6 +1,6 @@
 import '@polymer/iron-flex-layout/iron-flex-layout.js';
 import '@polymer/iron-list/iron-list.js';
-import '@polymer/iron-resizable-behavior/iron-resizable-behavior.js';
+import {IronResizableBehavior} from '@polymer/iron-resizable-behavior/iron-resizable-behavior.js';
 import '@polymer/paper-ripple/paper-ripple.js';
 import '@polymer/paper-styles/default-theme.js';
 import '@polymer/polymer/polymer-legacy.js';
@@ -206,6 +206,6 @@ Polymer({
   },
 
   behaviors: [
-    Polymer.IronResizableBehavior
+    IronResizableBehavior
   ]
 });

@@ -6,9 +6,9 @@ import '@polymer/paper-styles/color.js';
 import '@polymer/paper-styles/default-theme.js';
 import '@polymer/paper-styles/shadow.js';
 import '@polymer/paper-styles/typography.js';
-import '@polymer/iron-resizable-behavior/iron-resizable-behavior.js';
+import {IronResizableBehavior} from '@polymer/iron-resizable-behavior/iron-resizable-behavior.js';
 import './paper-date-picker-icons.js';
-import 'moment/min/moment.min.js';
+import moment from 'moment';
 
 // Ignore movement within this distance (px)
 var WIGGLE_THRESHOLD = 4;
@@ -302,7 +302,7 @@ Polymer({
   },
 
   behaviors: [
-    Polymer.IronResizableBehavior
+    IronResizableBehavior
   ],
 
   observers: [
