@@ -13,7 +13,7 @@
   },
   "homepage": "https://github.com/bendavis78/paper-date-picker#readme",
   "name": "@katapult/paper-date-picker",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "index.js",
   "devDependencies": {
     "browser-sync": "^2.8.0",
